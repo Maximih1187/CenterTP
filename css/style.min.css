@@ -1480,7 +1480,13 @@ h1 {
 }
 
 .question_icon {
-  padding: 30px 30px 30px 20px;
+  margin: 30px 30px 30px 20px;
+  rotate: 180deg;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.question_icon:hover {
+  rotate: 90deg;
 }
 
 .block-right_question_answer {
