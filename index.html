@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fons.css" />
     <title>Центр ТП</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -449,30 +450,34 @@
           </div>
           <section class="block_comment">
             <div class="container">
-              <div class="block_comment__tilte">Оставить комментарий:</div>
-              <div class="form">
+              <div class="block_comment__tilte">Оставить обращение:</div>
+              <form class="form" id="form" autocomplete="off">
                 <textarea
                   class="block_comment__input-comment"
                   name="block_comment__input-comment"
                   type="text"
-                  placeholder="Ваш комментарий"
-                  cols="30"
-                  rows="10"
+                  placeholder="Ваше обращение"
+                  id="msg"
                 ></textarea>
                 <input
+                  id="name"
                   class="block_comment__input-name"
                   type="text"
-                  placeholder="Ваше имя"
+                  placeholder="Введите имя"
+                  name="name"
+                  autocomplete="off"
                 />
                 <input
-                  class="block_comment__input-email"
-                  type="text"
-                  placeholder="Ваш email"
+                  class="block_comment__input-tel"
+                  type="tel"
+                  placeholder="Введите телефон"
+                  id="tel"
+                  autocomplete="off"
                 />
-              </div>
-              <button class="block_comment__button" type="submit">
-                опубликовать
-              </button>
+                <button class="block_comment__button" type="submit">
+                  Отправить
+                </button>
+              </form>
             </div>
           </section>
         </div>
@@ -706,5 +711,8 @@
         </div>
       </div>
     </section>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
