@@ -1509,23 +1509,36 @@ h1 {
 }
 
 .question_icon {
+  cursor: pointer;
   margin: 30px 30px 30px 20px;
-  rotate: 180deg;
+  rotate: 90deg;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.question_icon:hover {
-  rotate: 90deg;
-}
 
-.block-right_question_answer {
+.block-right_question_answer2 {
   width: 820px;
+  max-height: 300px;
   padding: 20px 30px;
   background-color: rgb(255, 255, 255);
   color: var(--text, #696E75);
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  transition-height: 3s;
+}
+
+.block-right_question_answer {
+  width: 820px;
+  padding: 0;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.question_icon2 {
+  rotate: 180deg;
 }
 
 @media screen and (min-width: 960px) and (max-width: 1200px) {

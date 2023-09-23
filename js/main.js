@@ -4,7 +4,7 @@ const headerNav2 = document.getElementById("header_navbar2");
 window.addEventListener("scroll", function () {
   const scrollPos = window.scrollY;
 
-  if (scrollPos > 20) {
+  if (scrollPos > 90) {
     headerEL.classList.add("header_mini");
   } else headerEL.classList.remove("header_mini");
 });
@@ -12,12 +12,20 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   const scrollPos = window.scrollY;
 
-  if (scrollPos > 20) {
+  if (scrollPos > 30) {
     headerNav2.classList.add("header_navbar3");
   } else headerNav2.classList.remove("header_navbar3");
 });
 
 //
+
+const questionIcon = document.getElementById("question_icon");
+const questionText = document.getElementById("block-right_question_answer");
+questionIcon.onclick = function () {
+  questionText.classList.add("block-right_question_answer2");
+  questionText.classList.remove("block-right_question_answer");
+  questionIcon.classList.add("question_icon2");
+};
 
 //
 //
