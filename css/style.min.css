@@ -88,6 +88,7 @@ h6 {
 
 body {
   font-family: Lab Grotesque;
+  padding-top: 200px;
 }
 
 .header {
@@ -98,6 +99,19 @@ body {
   background-color: #ffffff;
   z-index: 100;
   width: 100vw;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header_mini {
+  background-color: rgba(255, 255, 255, 0.7333333333);
+  -webkit-box-shadow: 0px 5px 26px 9px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 5px 26px 9px rgba(34, 60, 80, 0.2);
+  padding: 10px 0 8px 0;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .container {
@@ -281,10 +295,26 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 30px;
+  -webkit-transition: margin-top 0.4s;
+  transition: margin-top 0.4s;
 }
 
-.header_navbar2-menu:hover {
-  background: url("../img/3.png") no-repeat;
+.header_navbar3 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-top: 15px;
+}
+
+.header_navbar2-menu2 {
+  display: block;
+}
+
+.header_navbar2-menu4 {
+  display: none;
+}
+
+.header_navbar2-menu {
+  display: block;
 }
 
 .header_navbar2-right {
@@ -322,7 +352,6 @@ body {
 }
 
 .section-hero {
-  padding-top: 150px;
   height: 735px;
 }
 

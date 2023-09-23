@@ -1,3 +1,28 @@
+const headerEL = document.getElementById("header");
+const headerNav2 = document.getElementById("header_navbar2");
+
+window.addEventListener("scroll", function () {
+  const scrollPos = window.scrollY;
+
+  if (scrollPos > 20) {
+    headerEL.classList.add("header_mini");
+  } else headerEL.classList.remove("header_mini");
+});
+
+window.addEventListener("scroll", function () {
+  const scrollPos = window.scrollY;
+
+  if (scrollPos > 20) {
+    headerNav2.classList.add("header_navbar3");
+  } else headerNav2.classList.remove("header_navbar3");
+});
+
+//
+
+//
+//
+//
+
 let selector = document.querySelector("#tel");
 let im = new Inputmask("+7(999) 999-99-99");
 im.mask(selector);
@@ -62,5 +87,3 @@ validation
 
     alert(result);
   });
-
-selector.value = "";
